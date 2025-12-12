@@ -51,12 +51,12 @@ const Home = () => {
                 </div>
 
                 <div className='h1-right fade-in right'>
-                    <img src={raymond} alt="Raymond Chukwuyelu" />
+                    <img src={raymond} alt="Raymond Chukwuyelu" loading='eager'/>
                 </div>
             </div>
 
             <div className='cont4'>
-                <img src={laptop} alt="Raymond Chukwuyelu" className='fade-in left' />
+                <img src={laptop} alt="Raymond Chukwuyelu" className='fade-in left' loading='eager'/>
 
                 <div className='fade-in right'>
                     <h1>SKILLS</h1>
