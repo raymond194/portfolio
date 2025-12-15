@@ -8,6 +8,7 @@ import card1 from '../assets/images/card1.webp'
 import card2 from '../assets/images/card2.webp'
 import card3 from '../assets/images/card3.webp'
 import { HiOutlineMail } from "react-icons/hi";
+import NeonBall from '../components/NeonBall'
 
 const Home = () => {
 
@@ -29,6 +30,7 @@ const Home = () => {
 
     return (
         <div className='cont2'>
+            <NeonBall />
             <div className='cont3'>
                 <div className='h1-left fade-in left'>
                     <h1>MY PORTFOLIO</h1>

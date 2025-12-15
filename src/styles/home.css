@@ -106,10 +106,12 @@
 .mail-btns {
     display: flex;
 }
+
 .mail-btns a{
  width: 21px;
     height: 21px;
 }
+
 .mailBtn {
     color: black;
     
