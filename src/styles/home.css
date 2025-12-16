@@ -98,13 +98,12 @@ html.dark .h1-left h1 {
     flex-direction: column;
     gap: 4px;
     width: 100%;
-    max-width: 590px;
+    max-width: 600px;
 }
 
 .h1-left p {
-    font-size: clamp(14px, 5vw, 16px);
-    font-weight: 500;
-    color: #5d6168;
+    font-size: clamp(14px, 3vw, 15.5px);
+    color: #727272;
     line-height: 28px;
 }
 
@@ -114,6 +113,7 @@ html.dark .h1-left p {
 
 .mail-btns {
     display: flex;
+    margin-top: 4px;
 }
 
 .mail-btns a {
@@ -122,7 +122,8 @@ html.dark .h1-left p {
 }
 
 .mailBtn {
-    color: black;
+        color: #555454;
+;
 
 }
 
@@ -206,7 +207,7 @@ html.dark .cont5 h1 {
     width: 100%;
     display: flex;
     align-items: flex-start;
-    gap: 14px;
+    gap: 12px;
 }
 
 .cont5 .exp-content1 div {
@@ -238,6 +239,15 @@ html.dark .exp-title {
     font-size: 14px;
 }
 
+.exp-desc {
+    color: #7C7C7C;
+    font-size: 12px;
+}
+
+html.dark .exp-desc {
+    color: #ffffffcc;
+}
+
 html.dark .exp-header {
     color: #ffffffcc;
 }
@@ -251,9 +261,9 @@ html.dark .exp-header {
 }
 
 .cont5 .exp-content1 div ul li {
-    color: #45484b;
-    line-height: 25px;
-    font-size: clamp(12.5px, 2vw, 14.1px);
+    color: #747474;
+    line-height: 23px;
+    font-size: clamp(12.5px, 2vw, 14.3px);
 }
 
 html.dark .cont5 .exp-content1 div ul li {
@@ -282,6 +292,7 @@ html.dark .cont5 .exp-content1 div ul li {
 html.dark .cont6 h1 {
     color: #ffffff;
 }
+
 .card-cont {
     display: flex;
     gap: 20px;
@@ -326,6 +337,7 @@ html.dark .card {
     color: #5e5e5e;
     font-size: 14px;
     padding-left: 8px;
+    font-weight: 500;
 }
 
 html.dark .card-span1 {
@@ -334,8 +346,9 @@ html.dark .card-span1 {
 
 .card-span2 {
     color: #7c7c7c;
-    font-size: 12px;
+    font-size: 11.2px;
     padding-left: 8px;
+    font-weight: 500;
 }
 
 html.dark .card-span2 {
@@ -345,16 +358,19 @@ html.dark .card-span2 {
 
 /* Webkit browsers (Chrome, Edge, Safari) */
 .card-cont::-webkit-scrollbar {
-    height: 8px; /* horizontal scrollbar height */
+    height: 8px;
+    /* horizontal scrollbar height */
 }
 
 .card-cont::-webkit-scrollbar-track {
-    background: #e0e0e0; /* light grey track = visible bar */
+    background: #e0e0e0;
+    /* light grey track = visible bar */
     border-radius: 10px;
 }
 
 .card-cont::-webkit-scrollbar-thumb {
-    background: grey; /* thumb color */
+    background: grey;
+    /* thumb color */
     border-radius: 10px;
 }
 

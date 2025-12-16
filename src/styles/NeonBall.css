@@ -1,5 +1,6 @@
 :root {
-  --neon: #1b5a8f;
+  /* lighter version of #0d3b66 */
+  --neon-soft: #4f8fc2;
 }
 
 /* ================= NEON BALL ================= */
@@ -11,17 +12,16 @@
   top: 0;
   left: 0;
 
-  background: radial-gradient(
-    circle,
-    #1b5a8f 0%,
-    #0d3b66 70%,
-    #082a4a 100%
-  );
+  background: radial-gradient(circle,
+      #71a6d3 0%,   /* lighter */
+    #4f8fc2 70%,  /* lighter than before */
+    #2f6fa3 100%  );
 
   box-shadow:
-    0 0 20px var(--neon),
-    0 0 40px var(--neon),
-    0 0 60px rgba(27, 90, 143, 0.6);
+    0 0 20px rgba(47, 111, 163, 0.9),
+    0 0 40px rgba(47, 111, 163, 0.7),
+    0 0 70px rgba(47, 111, 163, 0.5);
+
 
   pointer-events: none;
   z-index: 9999;
@@ -45,31 +45,32 @@
 
   font-size: 26px;
 
+  /* start same as ball */
+  background: var(--neon-soft);
+  color: #000;
+
   transition:
     background 0.6s ease,
     color 0.6s ease,
     box-shadow 0.6s ease;
 
+  box-shadow:
+    0 0 14px var(--neon-soft),
+    0 0 28px rgba(47, 111, 163, 0.45);
+
   z-index: 10000;
 }
 
-/* Light mode button */
-.dark-btn.light {
-  background: var(--neon);
+/* after 2s – light mode */
+.dark-btn.light-ready {
+  background: rgb(244, 244, 244);
   color: #000;
-
-  box-shadow:
-    0 0 20px var(--neon),
-    0 0 40px rgba(27, 90, 143, 0.6);
+  box-shadow: none;
 }
 
-/* Dark mode button */
-.dark-btn.dark {
-  background: #000;
-  color: var(--neon);
-
-  box-shadow:
-    0 0 20px var(--neon),
-    0 0 40px rgba(27, 90, 143, 0.4);
+/* after 2s – dark mode */
+.dark-btn.dark-ready {
+  background: #333333;
+  color: #ffffffcc;
+  box-shadow: none;
 }
-

@@ -84,8 +84,8 @@ const Home = () => {
                     <div>
                         <span className='exp-title'>Frontend developer</span>
                         <span className='exp-header'>Diagnoxa</span>
-                        <span className='exp-header'>Sep 2023 - Dec 2024 · 1 yr 2 mos</span>
-                        <span className='exp-header'>Diagnoxa - Lagos</span>
+                        <span className='exp-desc'>Sep 2023 - Dec 2024 · 1 yr 2 mos</span>
+                        <span className='exp-desc'>Diagnoxa - Lagos</span>
 
                         <ul>
                             <li>Developed data-intensive frontend systems using React and TypeScript,
@@ -131,8 +131,8 @@ const Home = () => {
                     <div>
                         <span className='exp-title'>Frontend Developer</span>
                         <span className='exp-header'>Panlet</span>
-                        <span className='exp-header'>April 2022 - Jul 2023 · 1 yr 3 mos</span>
-                        <span className='exp-header'>Panlet - Lagos</span>
+                        <span className='exp-desc'>April 2022 - Jul 2023 · 1 yr 3 mos</span>
+                        <span className='exp-desc'>Panlet - Lagos</span>
 
                         <ul>
                             <li>Engineered and maintained a scalable React-based commerce

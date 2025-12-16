@@ -4,7 +4,7 @@ import "../styles/NeonBall.css";
 
 const SIZE = 60;
 const OFFSET = 20;
-const DURATION = 4000; // 4s → slow & clean
+const DURATION = 4000;
 
 export default function NeonBallToDark() {
   const ballRef = useRef<HTMLDivElement>(null);
@@ -12,6 +12,7 @@ export default function NeonBallToDark() {
   const [showBall, setShowBall] = useState(true);
   const [showButton, setShowButton] = useState(false);
   const [isDark, setIsDark] = useState(false);
+  const [ready, setReady] = useState(false);
 
   useEffect(() => {
     const startX = 0;
@@ -38,13 +39,14 @@ export default function NeonBallToDark() {
       } else {
         setShowBall(false);
         setShowButton(true);
+
+        setTimeout(() => setReady(true), 400);
       }
     };
 
     requestAnimationFrame(animate);
   }, []);
 
-  // Dark/light mode toggle
   useEffect(() => {
     document.documentElement.classList.toggle("dark", isDark);
     document.documentElement.classList.toggle("light", !isDark);
@@ -56,13 +58,14 @@ export default function NeonBallToDark() {
 
       {showButton && (
         <button
-          className={`dark-btn ${isDark ? "dark" : "light"}`}
+          className={`dark-btn ${
+            ready ? (isDark ? "dark-ready" : "light-ready") : ""
+          }`}
           onClick={() => setIsDark(v => !v)}
         >
           <FiMoon />
         </button>
       )}
-
     </>
   );
 }
