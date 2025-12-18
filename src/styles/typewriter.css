@@ -1,0 +1,19 @@
+.cursor {
+    border-right: 2px solid black;
+    margin-left: 2px;
+    animation: blink 0.7s step-end infinite;
+    margin: 0;
+    line-height: 1.1;
+    /* adjust as needed */
+    vertical-align: middle;
+}
+
+html.dark .cursor {
+    border-right: 2px solid #ffffffcc;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}

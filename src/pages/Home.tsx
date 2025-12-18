@@ -4,13 +4,18 @@ import raymond from '../assets/images/raymond.jpg'
 import laptop from '../assets/images/laptop.jpg'
 import panlet from '../assets/images/panlet.png'
 import diagnoxa from '../assets/images/diagnoxa.png'
-import card2 from '../assets/images/konga.png'
-import card3 from '../assets/images/card3.webp'
+import card1 from '../assets/images/diagnoxaApp.png'
+import card2 from '../assets/images/card2.jpeg'
+import card3 from '../assets/images/card3.jpeg'
 import { HiOutlineMail } from "react-icons/hi";
 import NeonBall from '../components/NeonBall'
-import card1 from '../assets/images/diagnoxaApp.png'
+import TypewriterH1 from '../components/TypewriterH1'
+import { RootState } from "../store/Store";
+import { useSelector } from "react-redux";
+
 
 const Home = () => {
+    const ready = useSelector((state: RootState) => state.ready.ready);
 
     useEffect(() => {
         const elements = document.querySelectorAll(".fade-in")
@@ -29,11 +34,14 @@ const Home = () => {
     }, [])
 
     return (
-        <div className='cont2'>
+        <div className="cont2">
             <NeonBall />
-            <div className='cont3'>
+            <div className="cont3">
                 <div className='h1-left fade-in left'>
-                    <h1>MY PORTFOLIO</h1>
+                    <TypewriterH1
+                        words={["Frontend Developer", "Fast", "Proficient", "Reliable"]}
+                        className="h1"
+                    />
 
                     <div>
                         <p>Hi, I’m Raymond Chukwuyelu — an enthusiastic and highly proficient Software Engineer.
@@ -207,8 +215,8 @@ export default Home
 
 const cards = [
     { id: 1, title: 'Diagnoxa', description: 'Health tech', img: card1 },
-    { id: 2, title: 'Hayati', description: 'Health tech', img: card3 },
-    { id: 3, title: 'Konga Clone', description: 'Freelance', img: card2 },
+        { id: 2, title: 'Vease', description: 'Poject Management Platform', img: card2 },
+    { id: 3, title: 'Eco-lodge', description: 'Real Estate Marketplaces', img: card3 },
 
 
 ]

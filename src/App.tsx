@@ -1,12 +1,16 @@
 import React from 'react';
 import Home from './pages/Home';
 import './styles/app.css';
+import ScrollToTop from './ScrollToTop';
 
 function App() {
   return (
-    <div className='cont1'>
-    <Home />
-    </div>
+    <>
+       <ScrollToTop />  
+      <div className='cont1'>
+        <Home />
+      </div>
+    </>
   );
 }
 

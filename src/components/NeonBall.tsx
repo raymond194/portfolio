@@ -1,18 +1,23 @@
 import { useEffect, useRef, useState } from "react";
 import { FiMoon } from "react-icons/fi";
 import "../styles/NeonBall.css";
+import { useDispatch, useSelector } from "react-redux";
+import { setReady } from "../store/ready/readySlice";
+import { AppDispatch } from "../store/Store";
+import { RootState } from "../store/Store";
 
 const SIZE = 60;
 const OFFSET = 20;
 const DURATION = 4000;
 
 export default function NeonBallToDark() {
+  const dispatch = useDispatch<AppDispatch>()
+  const ready = useSelector((state: RootState) => state.ready.ready); 
   const ballRef = useRef<HTMLDivElement>(null);
 
   const [showBall, setShowBall] = useState(true);
   const [showButton, setShowButton] = useState(false);
   const [isDark, setIsDark] = useState(false);
-  const [ready, setReady] = useState(false);
 
   useEffect(() => {
     const startX = 0;
@@ -40,7 +45,7 @@ export default function NeonBallToDark() {
         setShowBall(false);
         setShowButton(true);
 
-        setTimeout(() => setReady(true), 400);
+        setTimeout(() => dispatch(setReady(true)), 400);
       }
     };
 
@@ -58,9 +63,8 @@ export default function NeonBallToDark() {
 
       {showButton && (
         <button
-          className={`dark-btn ${
-            ready ? (isDark ? "dark-ready" : "light-ready") : ""
-          }`}
+          className={`dark-btn ${ready ? (isDark ? "dark-ready" : "light-ready") : ""
+            }`}
           onClick={() => setIsDark(v => !v)}
         >
           <FiMoon />
