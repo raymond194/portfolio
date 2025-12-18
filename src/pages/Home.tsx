@@ -4,7 +4,7 @@ import raymond from '../assets/images/raymond.jpg'
 import laptop from '../assets/images/laptop.jpg'
 import panlet from '../assets/images/panlet.png'
 import diagnoxa from '../assets/images/diagnoxa.png'
-import card1 from '../assets/images/diagnoxaApp.png'
+import card1 from '../assets/images/card1.webp'
 import card2 from '../assets/images/card2.jpeg'
 import card3 from '../assets/images/card3.jpeg'
 import { HiOutlineMail } from "react-icons/hi";
@@ -217,6 +217,5 @@ const cards = [
     { id: 1, title: 'Diagnoxa', description: 'Health tech', img: card1 },
         { id: 2, title: 'Vease', description: 'Poject Management Platform', img: card2 },
     { id: 3, title: 'Eco-lodge', description: 'Real Estate Marketplaces', img: card3 },
-
 
 ]
