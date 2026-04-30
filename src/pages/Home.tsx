@@ -185,7 +185,7 @@ const Home = () => {
                     <div>
                         <span className='exp-title'>Frontend Developer</span>
                         <span className='exp-header'>Panlet</span>
-                        <span className='exp-desc'>April 2021 - Jul 2023 · 1 yr 3 mos</span>
+                        <span className='exp-desc'>April 2021 - Jul 2022 · 1 yr 3 mos</span>
                         <span className='exp-desc'>Panlet - Lagos</span>
 
                         <ul>
