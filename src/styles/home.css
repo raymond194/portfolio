@@ -41,6 +41,7 @@
     max-width: 1376px;
     padding-top: clamp(24px, 5vw, 48px);
     padding-bottom: 20px;
+    height: 100%;
 }
 
 .cont3 {
