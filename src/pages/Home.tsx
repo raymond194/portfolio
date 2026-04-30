@@ -4,6 +4,7 @@ import raymond from '../assets/images/raymond.jpg'
 import laptop from '../assets/images/laptop.jpg'
 import panlet from '../assets/images/panlet.png'
 import diagnoxa from '../assets/images/diagnoxa.png'
+import hakeela from '../assets/images/Hakeela Full Logo.png'
 import card3 from '../assets/images/card1.webp'
 import card1 from '../assets/images/card2.jpeg'
 import card2 from '../assets/images/card3.jpeg'
@@ -34,9 +35,11 @@ const Home = () => {
     }, [])
 
     return (
+        
         <div className="cont2">
             <NeonBall />
             <div className="cont3">
+                
                 <div className='h1-left fade-in left'>
                     <TypewriterH1
                         words={["Frontend Developer", "Fast", "Proficient", "Reliable"]}
@@ -80,9 +83,10 @@ const Home = () => {
                         <li>React / React Native / Next.js  / JavaScript (ES6+)</li>
                         <li>Redux Toolkit / Zustand / TanStack Query</li>
                         <li>Responsive & accessible UI design</li>
-                        <li>Tailwind CSS / Material UI</li>
+                        <li>Tailwind CSS / Material UI / Bootstrap</li>
                         <li>Jest / Cypress / Zod</li>
                         <li>Git / Vite </li>
+                        <li>Node.js / Express.js / MongoDB</li>
                     </ul>
 
                 </div>
@@ -93,12 +97,48 @@ const Home = () => {
                 <h1>Experience</h1>
 
                 <div className='exp-content1 fade-in left'>
+                    <img src={hakeela} alt='bluewave' />
+
+                    <div>
+                        <span className='exp-title'>Fullstack developer (Contract)</span>
+                        <span className='exp-header'>Hakeela</span>
+                        <span className='exp-desc'>Jan 2025 - Mar 2026 · 1 yr 2 mos</span>
+                        <span className='exp-desc'>Hakeela - Lagos</span>
+
+                        <ul>
+                            <li>Worked across the stack to build and scale an EdTech platform focused on making tech education more accessible for marginalized communities and individuals with special needs.
+                            </li>
+
+                            <li>Led development of core features using React, TypeScript, Node.js, and REST APIs, covering learning flows, user accounts progress tracking, and content delivery</li>
+
+                            <li>Designed and built backend services that power authentication, course management, and adaptive learning features, making sure the system stays clean, scalable, and easy to extend
+                            </li>
+
+                            <li> Shipped accessible and responsive UI components with a focus on realworld usability, especially for users on low-end devices or with accessibility needs.
+                            </li>
+
+                            <li>Integrated AI features into learning workflows to support personalized learning paths and improve communication for users who need extra assistance.
+                            </li>
+
+                            <li>Improved performance across the system by tightening API responses, reducing unnecessary frontend re-renders, and optimizing how data is fetched and stored.
+                            </li>
+
+                            <li> Implemented secure auth flows and role-based access control to keep user data safe and properly segmented across different user types.
+                            </li>
+
+                            <li>Worked closely with product and design teams to break down complex learning requirements into simple, usable features that actually work for real users.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className='exp-content1 fade-in left'>
                     <img src={diagnoxa} alt='bluewave' />
 
                     <div>
                         <span className='exp-title'>Frontend developer</span>
                         <span className='exp-header'>Diagnoxa</span>
-                        <span className='exp-desc'>Sep 2023 - Dec 2025 · 2 yr 3 mos</span>
+                        <span className='exp-desc'>Sep 2022 - Dec 2024 · 2 yr 4 mos</span>
                         <span className='exp-desc'>Diagnoxa - Lagos</span>
 
                         <ul>
@@ -145,7 +185,7 @@ const Home = () => {
                     <div>
                         <span className='exp-title'>Frontend Developer</span>
                         <span className='exp-header'>Panlet</span>
-                        <span className='exp-desc'>April 2022 - Jul 2023 · 1 yr 3 mos</span>
+                        <span className='exp-desc'>April 2021 - Jul 2023 · 1 yr 3 mos</span>
                         <span className='exp-desc'>Panlet - Lagos</span>
 
                         <ul>
